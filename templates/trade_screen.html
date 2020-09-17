@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Market</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='img/objects/ship.ico') }}">
+        <script type="text/javascript" src="{{ url_for('static',
+        filename = 'scripts/tradePopulation.js')}}"></script>
+    </head>
+    <h1></h1>
+    <form name="creation" method="POST" action="http://localhost:5000/marketTrade">
+        <center>
+        <h2>Inventory</h2>
+        <h2><span id="inventory_name1">{{inventory_name1}}</span></h2>
+            <p> Buying Price: <span id="inventory_buy1">{{inventory_buy1}}</span> | Selling Price: <span id="inventory_sell1">{{inventory_sell1}}</span></p>
+
+        <h2><span id="inventory_name2">{{inventory_name2}}</span></h2>
+            <p> Buying Price: <span id="inventory_buy2">{{inventory_buy2}}</span> | Selling Price: <span id="inventory_sell2">{{inventory_sell2}}</span></p>
+
+        <h2><span id="inventory_name3">{{inventory_name3}}</span></h2>
+            <p> Buying Price: <span id="inventory_buy3">{{inventory_buy3}}</span> | Selling Price: <span id="inventory_sell3">{{inventory_sell3}}</span></p>
+
+        <h2><span id="inventory_name4">{{inventory_name4}}</span></h2>
+            <p> Buying Price: <span id="inventory_buy4">{{inventory_buy4}}</span> | Selling Price: <span id="inventory_sell4">{{inventory_sell4}}</span></p>
+
+        <h2><span id="inventory_name5">{{inventory_name5}}</span></h2>
+            <p> Buying Price: <span id="inventory_buy5">{{inventory_buy5}}</span> | Selling Price: <span id="inventory_sell5">{{inventory_sell5}}</span></p>
+
+        <h2><span id="inventory_name6">{{inventory_name6}}</span></h2>
+            <p> Buying Price: <span id="inventory_buy6">{{inventory_buy6}}</span> | Selling Price: <span id="inventory_sell6">{{inventory_sell6}}</span></p>
+
+        <h2><span id="inventory_name7">{{inventory_name7}}</span></h2>
+            <p> Buying Price: <span id="inventory_buy7">{{inventory_buy7}}</span> | Selling Price: <span id="inventory_sell7">{{inventory_sell7}}</span></p>
+
+        <h2><span id="inventory_name8">{{inventory_name8}}</span></h2>
+            <p> Buying Price: <span id="inventory_buy8">{{inventory_buy8}}</span> | Selling Price: <span id="inventory_sell8">{{inventory_sell8}}</span></p>
+
+        <h2><span id="inventory_name9">{{inventory_name9}}</span></h2>
+            <p> Buying Price: <span id="inventory_buy9">{{inventory_buy9}}</span> | Selling Price: <span id="inventory_sell9">{{inventory_sell9}}</span></p>
+
+        <h2><span id="inventory_name10">{{inventory_name10}}</span></h2>
+            <p> Buying Price: <span id="inventory_buy10">{{inventory_buy10}}</span> | Selling Price: <span id="inventory_sell10">{{inventory_sell10}}</span></p>
+
+    <script type="text/javascript">
+
+    $(document).ready(function () {
+        fillValues();
+    });
+    </script>
+    </center>
+    </form>
+
+</html>

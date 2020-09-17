@@ -1,0 +1,189 @@
+@font-face{
+  font-family: trial;
+  src: url('Digitaltech-rm0K.otf');
+  font-weight: bold;
+}
+@font-face{
+  font-family: neo;
+  src: url('NeogreyMedium.otf');
+  font-weight: bold;
+}
+
+body {
+  font-family: neo;
+  letter-spacing: 2px;
+  background-image: url(img/space/plainSpace.jpg);
+}
+
+h1 {
+  color: #ffd700;
+  text-align: center;
+  font-size: 40px;
+}
+
+.currWorld {
+  font-size: 30px;
+}
+
+p{
+    color: #ffd700;
+}
+h2{
+    color: #ffd700;
+}
+
+table {
+    background-color: black;
+    color: #ffd700;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.gameback{
+  position: relative;
+  left: 10%;
+  top: 5%;
+  width: 80%;
+  height: 90%;
+  background: url(img/space/boringSpace.jpg);
+}
+
+.planetArea {
+  background-image: url(img/space/boringSpace.jpg);
+  border-style: solid;
+  border-color: white;
+  position: absolute;
+  height: 85%;
+  width: 75%;
+  left: 20%;
+  right: 5%;
+  background-size: 100% 100%;
+}
+
+.planet {
+  width: 50px;
+  height: 50px;
+}
+
+
+.map {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.inventoryIcon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 25px;
+  left: 85px;
+}
+
+.submit {
+  font-family: neo;
+  background-color: #ffd700;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.decrement{
+  background-color: red;
+  border: none;
+  color: black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.increment{
+  background-color: green;
+  border: none;
+  color: black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.infoBox .infoBoxText {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #ffd700;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.infoBox:hover .infoBoxText {
+  visibility: visible;
+}
+
+.confirmBox {
+  background: black;
+  height: 20%;
+  width: 30%;
+  position: absolute;
+  border-style: solid;
+  border-color: white;
+  z-index: 1;
+  top: 40%;
+  left: 35%;
+  border-radius: 12px;
+}
+
+.cancel {
+  font-family: neo;
+  padding: 2% 4%;
+  background-color: red;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+}
+.okay {
+  font-family: neo;
+  padding: 2% 4%;
+  background-color: green;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+.end {
+  font-family: neo;
+  padding: 2% 4%;
+  background-color: #ffd700;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+}

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Space Trader</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="icon" href="{{ url_for('static', filename='img/objects/ship.ico') }}">
+        <script type="text/javascript" src="{{ url_for('static', 
+        filename = 'scripts/characterCreation.js')}}"></script>
+    </head>
+    <h1>Character Creation</h1>
+    <form name="creation" method="POST" action="http://localhost:5000/displayGame">
+        <center>
+        <p>Character Name <input type="text" name="Name" id="name" required></p><br>
+        <p> Difficulty
+            <select name="Difficulty" onchange="changePoints(this.value)">
+                <option value=""></option>
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+        </p><br>
+        <h2> Unassigned Skill Points <span id="unassigned">0</span></h2>
+        <p>Pilot
+            <button class = "decrement" type="button" onClick="decrement('pilot')">-</button>
+                <input type="number" name="Pilot" id="Pilot" step="1" style="width: 40px" readonly="readonly" value=0>
+            <button class = "increment" type="button" onClick="increment('pilot')">+</button>
+        </p><br>
+        <p>Fighter
+            <button class = "decrement" type="button" onClick="decrement('fighter')">-</button>
+            <input type="number" name="Fighter" id="Fighter" step="1" style="width: 40px" readonly="readonly" value=0>
+            <button class = "increment" type="button" onClick="increment('fighter')">+</button>
+        </p><br>
+        <p>Merchant
+            <button class = "decrement" type="button" onClick="decrement('merchant')">-</button>
+            <input type="number" name="Merchant" id="Merchant" step="1" style="width: 40px" readonly="readonly" value=0>
+            <button class = "increment" type="button" onClick="increment('merchant')">+</button>
+        </p><br>
+        <p>Engineer
+            <button class = "decrement" type="button" onClick="decrement('engineer')">-</button>
+            <input type="number" name="Engineer" id="Engineer" step="1" style="width: 40px" readonly="readonly" value=0>
+            <button class = "increment" type="button" onClick="increment('engineer')">+</button>
+        </p><br>
+        <button class = "submit" type="buttom" onClick="checkSubmit()">Submit</button>
+    </center>
+    </form>
+
+</html>

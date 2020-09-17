@@ -1,0 +1,30 @@
+@font-face{
+  font-family: trial;
+  src: url('Digitaltech-rm0K.otf');
+  font-weight: bold;
+}
+
+body {
+  font-family: trial;
+  background-image: url(img/space/space.jpg);
+  font-size: 30px;
+}
+
+h1 {
+  color: #ffd700;
+  text-align: center;
+}
+
+.submit {
+  font-family: trial;
+  padding: 5% 0;
+  background-color: #ffd700;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+}
